@@ -67,17 +67,17 @@ AC_ARG_WITH(
           xavier)
             AM_CONDITIONAL(XAVIER, true)
             system_type=xavier
-            l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.2.2_Linux_GA_P2888/Linux_for_Tegra`
+            l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.3_Linux_P2888/Linux_for_Tegra`
           ;;
           tx2)
             AM_CONDITIONAL(TX2, true)
             system_type=tx2
-            l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.2.2_Linux_GA_P3310/Linux_for_Tegra`
+            l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.3_Linux_P3310/Linux_for_Tegra`
           ;;
           nano)
             AM_CONDITIONAL(NANO, true)
             system_type=nano
-            l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.2.2_Linux_GA_P3448/Linux_for_Tegra`
+            l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.3_Linux_P3448/Linux_for_Tegra`
           ;;
           *)
             AC_MSG_ERROR([bad value ${withval} for --with-system-type (valid:xavier, tx2, nano)])
@@ -85,7 +85,7 @@ AC_ARG_WITH(
     esac],
     [
         system_type=tx2
-        l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.2.2_Linux_GA_P3310/Linux_for_Tegra`
+        l4t_dir=`realpath ~/nvidia/nvidia_sdk/JetPack_4.3_Linux_P3310/Linux_for_Tegra`
     ])
 
 # Change the l4t directory from the one inferred by the system type if

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRC_DIR='/usr/src/tegra_multimedia_api'
+SRC_DIR='/usr/src/jetson_multimedia_api'
 DEST_DIR="$HOME/"
 
 check_src()
@@ -44,7 +44,7 @@ n_cpus()
 
 build()
 {
-    pushd "${DEST_DIR}/tegra_multimedia_api/argus"
+    pushd "${DEST_DIR}/jetson_multimedia_api/argus"
     mkdir build
     cd build
     cmake ..
